@@ -1,0 +1,14 @@
+<h1>Add user</h1>
+
+<%#<%= render 'form', action: :new, user: @user %>
+
+
+<%# action: url to which we want to send data %>
+<%# method: http method that we want to use %>
+<form action="/users" method="post">
+  <label for="username">Username</label>
+  <input id="username" type="text" name="user[username]">
+
+  <input type="submit" value="Add user">
+</form>
+
